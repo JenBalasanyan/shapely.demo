@@ -276,6 +276,7 @@ bdi {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: rgb(35, 40, 112);
+    
 }
 
 .grid-item {
@@ -295,6 +296,8 @@ bdi {
     scroll-behavior: auto;
     background-repeat: no-repeat;
     text-align: center;
+    width: auto;
+    color: white;
 }
 
 .toggle-btn{
@@ -313,14 +316,95 @@ bdi {
     float: left;
     margin-bottom: 8px;
 }
+.image-container img{
+    width: 100%;
+}
 
 
 
-@media screen and (max-width: 768px) {
 
-    .page1 {
-        background-size: contain;
+
+
+
+ @media screen and (max-width:1024px){
+    .image-container{
+    width:100%
+}
+}
+@media (max-width:991px) {
+    .toggle-btn{
+    display: block;
     }
+    nav{
+    display: none;
+    width: 100%;
+    }
+    nav ul li{
+    padding: 15px 0px; 
+    width: 100%;
+    }
+    nav.show{
+    display: block;
+    }
+    }
+@media screen and (max-width: 952px){
+    .logo{
+    font-size: 30px;
+    padding-left: 50px;
+    }
+    nav ul li a{
+    font-size: 16px;
+        }
+        }
+@media screen and (max-width: 858px){
+    .toggle-btn{
+    display: block;
+    }
+    nav ul{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    transition: all .5s;
+    }
+    nav ul li{
+    display: block;
+    margin: 15px 0;
+    line-height: 30px;
+    }
+    nav ul li a{
+    font-size: 20px;
+    }
+        
+}
+@media screen and (max-width: 858px){
+    .toggle-btn{
+        display: block;
+    }
+    nav ul{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 15px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 768px) {
 
     h2 {
         font-size: 60px;
@@ -404,58 +488,3 @@ bdi {
         width:100%;
     }
 } 
-@media screen and (max-width: 858px){
-    .toggle-btn{
-        display: block;
-    }
-    nav ul{
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        background: white;
-        top: 80px;
-        left: 0;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 15px 0;
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-
-}
-@media screen and (max-width: 952px){
-    .logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-    }
-    @media (max-width:991px) {
-        .toggle-btn{
-            display: block;
-        }
-        nav{
-            display: none;
-            width: 100%;
-
-        }
-        nav ul li{
-            padding: 15px 0px; 
-            width: 100%;
-        }
-        nav.show{
-            display: block;
-        }
-    }
-    @media screen and (max-width:1024px){
-        .image-container{
-            width:100%
-        }
-    }
