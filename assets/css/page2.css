@@ -319,7 +319,10 @@ bdi {
 .image-container img{
     width: 100%;
 }
-
+div.page8 ol{
+    font-size: 20px;
+    padding:0px 0px 50px 0px ;
+}
 
 
 
